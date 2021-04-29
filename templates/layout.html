@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "pl">
+    <head>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='6.css')}}" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="{{ url_for('home') }}" class="navbar-brand">My home</a>
+            <a href="{{ url_for('gallery') }}" class="navbar-item">My gallery</a>
+            <a href="{{ url_for('about') }}" class="navbar-item">About me</a>
+            <a href="{{ url_for('contact') }}" class="navbar-item">Contact with me</a>
+            
+        </div>
+
+        <div class="body-content">
+            {% block content %}
+            {% endblock %}
+            <hr/>
+            <footer>
+                <p>Oleksandr Bedrii 2021</p>
+            </footer>
+        </div>
+    </body>
+</html>
