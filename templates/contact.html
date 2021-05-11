@@ -1,8 +1,28 @@
 {% extends "layout.html" %}
 {% block title %}
-Contact with me
+Skontaktuj się ze mną
 {% endblock %}
 {% block content %}
-<p>Tu będzie możliwy kontakt ze mną:</p>
-<p><a href ="mailto:bedrii_70918@cloud.wsb.wroclaw.pl">Wyślij maila</a></p>
+<div class="container">
+  <form class="form-signin">
+      <div class="head">
+        <h1 class="h3 mb-3 fw-normal ">Kontakt ze mną</h1>
+      </div>
+      <div class="form-floating">
+          <input type="text" class="form-control" id="Name" >
+          <label for="Name">Jak się nazywasz?</label>
+        </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="Email" >
+        <label for="Email">Jaki masz adres email?</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="Comment" >
+        <label for="Comment">Tu pisz wiadomość</label>
+      </div>
+  
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Wyślij</button>
+    </form>
+    
+  </div>
 {% endblock %}

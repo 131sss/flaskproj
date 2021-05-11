@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: 1.4em;
+	vertical-align: baseline;
+	text-decoration: none;
+	outline: 0;
+}
+body
+{
+	min-height: 100vh;
+	overflow:auto;
+    
+}
+main
+{
+	min-height: 100vh;
+	background-color: rgb(0, 0, 0)
+}
+main p
+{
+	color:white;
+}
+footer
+{
+	width:100vw;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 10px 10px 10px
+}
+
+li.nav-item.active
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+li.nav-item
+{
+	font-size: 20px;
+}
+
+.head > h1 
+{
+	font-size: 42px;
+	font-weight: 500;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	text-align: center;
+	color:white;
+}
+.head > h2
+{
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 50px;
+	color: white;
+}
+.gallery
+{
+	transition: all 0.1s ease-in-out;
+	overflow: hidden;
+}
+.gallery:hover
+{
+	transform: scale(1.03);
+}
+.link a
+{
+	text-decoration: none;
+	color: #488bbb;
+}
+.link a:hover
+{
+	color:white;
+}
+footer
+{
+	width:100%;
+	text-align: center;
+	clear: both;
+	color: white;
+}
+footer p
+{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+.repositories
+{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.col-sm-4 img
+{
+	margin-bottom: 30px;
+}
+.form-signin {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+	
+	
+}
+.form-signin input[type=email]
+{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-bottom: 10px;
+	background-color: rgb(27, 27, 27);
+	color: white;
+}
+.form-signin input[type=text]
+{
+	margin-bottom: 1px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: rgb(27, 27, 27);
+	color: white;
+}
+.form-signin button
+{
+	margin-top: 15px;
+}
+.form-signin label {
+	color:white;
+}
+
+.carousel {
+	margin-bottom: 4rem;
+  }
+.carousel-caption {
+	bottom: 3rem;
+	z-index: 10;
+}
+  
+.carousel-item {
+	height: 32rem;
+}
+.carousel-item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 32rem;
+}
