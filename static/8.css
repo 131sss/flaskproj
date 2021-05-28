@@ -147,3 +147,17 @@ footer p
 	min-width: 100%;
 	height: 32rem;
 }
+.flash
+{
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+.flash.success
+{	
+	background: #02ff4a;
+}
+.flash.error
+{
+	background: #ff0000;
+}

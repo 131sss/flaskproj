@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}
+Edycja
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="head">
+    <h1 class="h3 mb-3 fw-normal ">Edytuj komentarz</h1>
+  </div>
+  {% for cat, msg in get_flashed_messages(True) %}
+  <div class="flash {{cat}}">{{msg}}</div>
+  {% endfor %} 
+  <form class="form-signin"  method="POST">
+    
+    <div class="form-floating">
+      <input type="text" class="form-control" name="text" id="Comment" >
+      <label for="Comment">Tu pisz wiadomość</label>
+    </div>
+  
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Edytuj</button>
+  </form>
+    
+  </div>
+{% endblock %}
