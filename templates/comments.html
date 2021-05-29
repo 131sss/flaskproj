@@ -9,12 +9,12 @@ Lista komentarzy
         <br />
     </div>
     {% for comments in data %}
-    <div style="background-color: rgb(63, 63, 63); border: black;" class="alert alert-info">
-        <h2 style="color: rgb(228, 95, 255);">{{ comments.name }}</h2>
-        <p style="color: rgb(0, 217, 255);">{{ comments.mail }}</p>
+    <div style="background-color: rgb(34, 34, 34); border: black;" class="alert alert-info">
+        <h2 style="color: rgb(255, 0, 0);">{{ comments.name }}</h2>
+        <p style="color: rgb(255, 145, 0);">{{ comments.mail }}</p>
         <h2 style="color: white;font-size: 20px;">{{ comments.text }}</h2>
         <p style="color: rgb(255, 255, 255);text-align: right;"><b> Data publikacji: {{ comments.date }}</b></p>
-        <p style="color: rgb(228, 95, 255);text-align: right;">Nr. komentarza:{{ comments.id }}</p>
+        <p style="color: rgb(255, 0, 0);text-align: right;">Nr. komentarza:{{ comments.id }}</p>
         <a href="/comments/{{ comments.id }}/delete" class="btn btn-danger">Usuń</a>
         <a href="/comments/{{ comments.id }}/edit" class="btn btn-success">Edytuj</a>
     </div>
