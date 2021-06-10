@@ -1,4 +1,4 @@
-AZDBSERVER = 'wsbsqldb.database.windows.net' 
+AZDBSERVER = 'wsbsqldb1.database.windows.net' 
 AZDBNAME = 'WSBAzureDB' 
 AZDBUSER = 'Oleksandr' 
 AZDBPW = '1QW3e4r5' 
